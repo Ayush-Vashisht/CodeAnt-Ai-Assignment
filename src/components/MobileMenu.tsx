@@ -23,10 +23,6 @@ import {
   SheetClose,
 } from "@/components/ui/sheet";
 
-interface MobileMenuProps {
-  isOpen: boolean;
-  onClose: () => void;
-}
 
 export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
   const pathname = usePathname();

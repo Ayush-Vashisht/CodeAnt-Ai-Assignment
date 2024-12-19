@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import {
   Github,
@@ -58,7 +59,7 @@ export default function SignInPage() {
             <div className="border-t" />
             {selectedOption === "saas" && (
               <div className="space-y-3 ">
-                <Link href="/Repositories">
+                <Link href="/">
                   <Button
                     variant="outline"
                     className="w-full justify-center gap-2"
@@ -67,7 +68,7 @@ export default function SignInPage() {
                     Sign in with Github
                   </Button>
                 </Link>
-                <Link href="/Repositories">
+                <Link href="/">
                   <Button
                     variant="outline"
                     className="w-full justify-center gap-2"
@@ -76,7 +77,7 @@ export default function SignInPage() {
                     Sign in with Bitbucket
                   </Button>
                 </Link>
-                <Link href="/Repositories">
+                <Link href="/">
                   <Button
                     variant="outline"
                     className="w-full justify-center gap-2"
@@ -85,7 +86,7 @@ export default function SignInPage() {
                     Sign in with Azure Devops
                   </Button>
                 </Link>
-                <Link href="/Repositories">
+                <Link href="/">
                   <Button
                     variant="outline"
                     className="w-full justify-center gap-2"
@@ -98,7 +99,7 @@ export default function SignInPage() {
             )}
             {selectedOption === "self-hosted" && (
               <div className="space-y-3 ">
-                <Link href="/Repositories">
+                <Link href="/">
                   <Button
                     variant="outline"
                     className="w-full justify-center gap-2"
@@ -107,7 +108,7 @@ export default function SignInPage() {
                     Self Hosted GitLab
                   </Button>
                 </Link>
-                <Link href="/Repositories">
+                <Link href="/">
                   <Button
                     variant="outline"
                     className="w-full justify-center gap-2"

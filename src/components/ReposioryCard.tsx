@@ -1,13 +1,6 @@
 import { Badge } from "@/components/ui/badge";
+import { NotepadText } from "lucide-react";
 
-interface RepositoryCardProps {
-  name: string;
-  isPublic: boolean;
-  language: string;
-  languageColor: string;
-  size: number;
-  updatedAt: string;
-}
 
 export function RepositoryCard({
   name,
@@ -40,7 +33,7 @@ export function RepositoryCard({
               />
               {language}
             </div>
-            <div>{size.toLocaleString()} KB</div>
+            <div className="flex flex-row gap-1"><NotepadText className="h-4 w-4"/>{size.toLocaleString()} KB</div>
             <div className="text-sm text-[#868e96]">Updated {updatedAt}</div>
           </div>
         </div>

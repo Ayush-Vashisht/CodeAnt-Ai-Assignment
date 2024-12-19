@@ -1,12 +1,21 @@
-'use client'
+"use client";
 
-import Link from 'next/link'
-import { usePathname } from 'next/navigation'
-import { Code2, CloudCog, FileQuestion, Settings, LayoutDashboard, HelpCircle, LogOut, ChevronDown } from 'lucide-react'
-import { cn } from '@/lib/utils'
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import {
+  Code2,
+  CloudCog,
+  FileQuestion,
+  Settings,
+  LayoutDashboard,
+  HelpCircle,
+  LogOut,
+  ChevronDown,
+} from "lucide-react";
+import { cn } from "@/lib/utils";
 
 export function Sidebar() {
-  const pathname = usePathname()
+  const pathname = usePathname();
 
   return (
     <div className="flex flex-col h-screen w-[240px] bg-[#f8f9fa] border-r border-[#e9ecef]">
@@ -23,7 +32,9 @@ export function Sidebar() {
             UD
           </div>
           <div className="flex-1 min-w-0">
-            <div className="text-sm font-medium truncate">UtkarshDhairyaPa...</div>
+            <div className="text-sm font-medium truncate">
+              UtkarshDhairyaPa...
+            </div>
           </div>
           <ChevronDown className="w-4 h-4 text-[#868e96]" />
         </button>
@@ -33,10 +44,12 @@ export function Sidebar() {
         <ul className="space-y-[2px]">
           <li>
             <Link
-              href="/"
+              href="/Repositories"
               className={cn(
-                "flex items-center gap-3 px-3 py-2 rounded-lg text-[14px]",
-                pathname === "/" ? "bg-primary text-white" : "text-[#495057] hover:bg-[#f1f3f5]"
+                "flex items-center gap-3 px-3 py-2 rounded-xl text-[14px]",
+                pathname === "/Repositories"
+                  ? "bg-primary text-white"
+                  : "text-[#495057] hover:bg-[#f1f3f5]"
               )}
             >
               <LayoutDashboard className="h-4 w-4" />
@@ -47,8 +60,10 @@ export function Sidebar() {
             <Link
               href="/CodeReview"
               className={cn(
-                "flex items-center gap-3 px-3 py-2 rounded-lg text-[14px]",
-                pathname === "/code-review" ? "bg-primary text-white" : "text-[#495057] hover:bg-[#f1f3f5]"
+                "flex items-center gap-3 px-3 py-2 rounded-xl text-[14px]",
+                pathname === "/CodeReview"
+                  ? "bg-primary text-white"
+                  : "text-[#495057] hover:bg-[#f1f3f5]"
               )}
             >
               <Code2 className="h-4 w-4" />
@@ -59,8 +74,10 @@ export function Sidebar() {
             <Link
               href="/CloudSecurity"
               className={cn(
-                "flex items-center gap-3 px-3 py-2 rounded-lg text-[14px]",
-                pathname === "/cloud-security" ? "bg-primary text-white" : "text-[#495057] hover:bg-[#f1f3f5]"
+                "flex items-center gap-3 px-3 py-2 rounded-xl text-[14px]",
+                pathname === "/CloudSecurity"
+                  ? "bg-primary text-white"
+                  : "text-[#495057] hover:bg-[#f1f3f5]"
               )}
             >
               <CloudCog className="h-4 w-4" />
@@ -71,8 +88,10 @@ export function Sidebar() {
             <Link
               href="/HowToUse"
               className={cn(
-                "flex items-center gap-3 px-3 py-2 rounded-lg text-[14px]",
-                pathname === "/how-to-use" ? "bg-primary text-white" : "text-[#495057] hover:bg-[#f1f3f5]"
+                "flex items-center gap-3 px-3 py-2 rounded-xl text-[14px]",
+                pathname === "/HowToUse"
+                  ? "bg-primary text-white"
+                  : "text-[#495057] hover:bg-[#f1f3f5]"
               )}
             >
               <FileQuestion className="h-4 w-4" />
@@ -83,8 +102,10 @@ export function Sidebar() {
             <Link
               href="/Settings"
               className={cn(
-                "flex items-center gap-3 px-3 py-2 rounded-lg text-[14px]",
-                pathname === "/settings" ? "bg-primary text-white" : "text-[#495057] hover:bg-[#f1f3f5]"
+                "flex items-center gap-3 px-3 py-2 rounded-xl text-[14px]",
+                pathname === "/Settings"
+                  ? "bg-primary text-white"
+                  : "text-[#495057] hover:bg-[#f1f3f5]"
               )}
             >
               <Settings className="h-4 w-4" />
@@ -95,12 +116,15 @@ export function Sidebar() {
       </nav>
 
       <div className="mt-auto px-3 pb-3">
-        <Link href="/Support" className="flex items-center gap-3 px-3 py-2 text-[14px] text-[#495057] hover:bg-[#f1f3f5] rounded-lg">
+        <Link
+          href="/Support"
+          className="flex items-center gap-3 px-3 py-2 text-[14px] text-[#495057] hover:bg-[#f1f3f5] rounded-lg"
+        >
           <HelpCircle className="h-4 w-4" />
           Support
         </Link>
-        <button 
-          onClick={() => console.log('Logout clicked')}
+        <button
+          onClick={() => console.log("Logout clicked")}
           className="w-full flex items-center gap-3 px-3 py-2 text-[14px] text-[#495057] hover:bg-[#f1f3f5] rounded-lg"
         >
           <LogOut className="h-4 w-4" />
@@ -108,6 +132,5 @@ export function Sidebar() {
         </button>
       </div>
     </div>
-  )
+  );
 }
-
