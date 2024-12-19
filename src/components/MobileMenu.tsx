@@ -55,10 +55,10 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
         <div className="px-2">
           <nav className="space-y-1">
             <Link
-              href="/"
+              href="/Repositories"
               className={cn(
                 "flex items-center gap-3 px-3 py-2 rounded-lg text-[14px]",
-                pathname === "/"
+                pathname === "/Repositories"
                   ? "bg-primary text-white"
                   : "text-[#495057] hover:bg-[#f1f3f5]"
               )}
@@ -68,10 +68,10 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
               Repositories
             </Link>
             <Link
-              href="/code-review"
+              href="/CodeReview"
               className={cn(
                 "flex items-center gap-3 px-3 py-2 rounded-lg text-[14px]",
-                pathname === "/code-review"
+                pathname === "/CodeReview"
                   ? "bg-primary text-white"
                   : "text-[#495057] hover:bg-[#f1f3f5]"
               )}
@@ -81,10 +81,10 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
               AI Code Review
             </Link>
             <Link
-              href="/cloud-security"
+              href="/CloudSecurity"
               className={cn(
                 "flex items-center gap-3 px-3 py-2 rounded-lg text-[14px]",
-                pathname === "/cloud-security"
+                pathname === "/CloudSecurity"
                   ? "bg-primary text-white"
                   : "text-[#495057] hover:bg-[#f1f3f5]"
               )}
@@ -94,10 +94,10 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
               Cloud Security
             </Link>
             <Link
-              href="/how-to-use"
+              href="/HowToUse"
               className={cn(
                 "flex items-center gap-3 px-3 py-2 rounded-lg text-[14px]",
-                pathname === "/how-to-use"
+                pathname === "/HowToUse"
                   ? "bg-primary text-white"
                   : "text-[#495057] hover:bg-[#f1f3f5]"
               )}
@@ -107,10 +107,10 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
               How to Use
             </Link>
             <Link
-              href="/settings"
+              href="/Settings"
               className={cn(
                 "flex items-center gap-3 px-3 py-2 rounded-lg text-[14px]",
-                pathname === "/settings"
+                pathname === "/Settings"
                   ? "bg-primary text-white"
                   : "text-[#495057] hover:bg-[#f1f3f5]"
               )}
@@ -120,7 +120,7 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
               Settings
             </Link>
             <Link
-              href="/support"
+              href="/Support"
               className="flex items-center gap-3 px-3 py-2 text-[14px] text-[#495057] hover:bg-[#f1f3f5] rounded-lg"
               onClick={onClose}
             >
