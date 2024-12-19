@@ -127,6 +127,7 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
               <HelpCircle className="h-4 w-4" />
               Support
             </Link>
+            <Link href='/'>
             <button
               onClick={() => {
                 console.log("Logout clicked");
@@ -136,7 +137,7 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
             >
               <LogOut className="h-4 w-4" />
               Logout
-            </button>
+            </button></Link>
           </nav>
         </div>
       </SheetContent>

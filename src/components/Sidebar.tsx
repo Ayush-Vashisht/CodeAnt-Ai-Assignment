@@ -123,13 +123,15 @@ export function Sidebar() {
           <HelpCircle className="h-4 w-4" />
           Support
         </Link>
-        <button
-          onClick={() => console.log("Logout clicked")}
-          className="w-full flex items-center gap-3 px-3 py-2 text-[14px] text-[#495057] hover:bg-[#f1f3f5] rounded-lg"
-        >
-          <LogOut className="h-4 w-4" />
-          Logout
-        </button>
+        <Link href ='/'>
+          <button
+            onClick={() => console.log("Logout clicked")}
+            className="w-full flex items-center gap-3 px-3 py-2 text-[14px] text-[#495057] hover:bg-[#f1f3f5] rounded-lg"
+          >
+            <LogOut className="h-4 w-4" />
+            Logout
+          </button>
+        </Link>
       </div>
     </div>
   );
